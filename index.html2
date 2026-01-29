@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Archie Comixx</h1> 
+    </header>
+    <main>
+        <h2>Archie's Personal Program Page!</h2>
+        <p>Hey there! My name is Adaija and this is my personal introductory page. I'm 25, Alabama born and Florida raised, and love computer science. I hope to use this page to improve my personal HTML skill and express myself in a new way!</p>
+        <a href="https://docs.google.com/document/d/1TGJ1BBtZ-DGRp5ekH4PHd3yIFbLStwMRNEhMkNWTLfY/edit?tab=t.0">Here</a>
+    </main>
+</body>
+</html>
