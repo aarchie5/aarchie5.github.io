@@ -2,4 +2,4 @@
 
 I am editing this desktop file as a test.
 =======
-This is Adaija and I have successfully set up my GitHub on Jan 12th at 4:35p.
+This is a test for D.I. von Briesen, August 18th 4:35pm.
