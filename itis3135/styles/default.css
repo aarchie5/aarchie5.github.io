@@ -1,0 +1,58 @@
+body {
+    background-color: #f3ead8;
+    color: #303633;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: Georgia, serif;
+    color: #6f541f;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+main {
+    padding: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+a {
+    color: #6f541f;
+    text-decoration: none;
+}
+a:visited {
+    color: #6f541f;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.display-name {
+    text-align: center;
+}
+blockquote {
+    text-align: center;
+}
+.smaller-icon {
+    width: 300px;
+    height: auto;
+}
+.explain {
+    text-align: center;
+}
