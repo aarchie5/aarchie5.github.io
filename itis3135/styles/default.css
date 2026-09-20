@@ -1,7 +1,8 @@
 body {
-    background-color: #f3ead8;
+    background: radial-gradient(circle at top, #9da678 0%, #9da678 20%, #b1ab9f 100%);
+    background-color: #b1ab9f;
     color: #303633;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
@@ -9,7 +10,9 @@ body {
 
 h1,
 h2 {
-    font-family: Georgia, serif;
+    font-family: impact, sans-serif;
+    letter-spacing: 3px;
+    text-transform: 3px;
     color: #6f541f;
 }
 
@@ -19,15 +22,27 @@ header {
 
 nav {
     text-align: center;
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff, #b3b3b3, #f2f2f2, #999999);
+    border-radius: 10px;
+    border: 4px solid rgba(35, 91, 35, 0.714);
 }
 
 main {
     padding: 20px 0;
 }
-
 footer {
+     text-align: center;
+     padding: 10px 0;
+}
+
+.alt-footer {
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff, #b3b3b3, #f2f2f2, #999999);
+    border-radius: 10px;
+    border: 4px solid darkgreen;
 }
 a {
     color: #6f541f;
@@ -55,4 +70,7 @@ blockquote {
 }
 .explain {
     text-align: center;
+}
+.pleasure {
+    font-family: Georgia, sans-serif;
 }
