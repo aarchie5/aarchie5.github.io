@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collecting Retro, Y2K, and Novelty Items || What: The Collection</title>
+    <link rel="icon" type="image/png" href="images/tv.png">
+
+        
+        <style>
+            /* Color palette "Give me a mix of color that represent the feeling and vibe of vintage knick knacks, decor and collector items." */
+            :root {
+                --burgundy: #9C4D51;
+                --olive: #A7A05A;
+                --mustard: #D5A94C;
+                --grey: #969494;
+                --cream: #D4BEA0;
+                --dark-text: #332725;
+            }
+
+            /* General page styling */
+            body {
+                max-width: 1400px;
+                margin: 0 auto;
+                background-color: var(--cream);
+                color: var(--dark-text);
+                font-family: Georgia, serif;
+                line-height: 1.6;
+                background-image: radial-gradient(
+                    circle,
+                    rgba(113, 55, 59, 0.09) 1px,
+                    transparent 1px
+                );
+                background-size: 22px 22px;
+            }
+
+            /* Header */
+            header {
+                background-color: var(--burgundy);
+                /* white text provides a good contrast against the burgundy and fits the color scheme well*/
+                color: #FFFFFF;
+                text-align: center;
+                padding: 30px 20px;
+            }
+
+            h1 {
+                margin: 0 0 20px;
+                font-family: Georgia, serif;
+                font-size: clamp(2rem, 5vw, 3.5rem);
+                letter-spacing: 1px;
+                text-shadow: 2px 2px 0 #71373B;
+            }
+
+            /* Navigation */
+            nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 12px;
+                margin: 20px auto 0;
+                max-width: 950px;
+                padding: 12px;
+                border-top: 1px solid var(--mustard);
+                border-bottom: 1px solid var(--mustard);
+            }
+
+            nav a {
+                /* white text provides a good contrast against the burgundy and fits the color scheme well*/
+                color: #FFFFFF;
+                text-decoration: none;
+                font-family: Arial, sans-serif;
+                font-weight: bold;
+                padding: 6px 8px;
+                border-radius: 4px;
+                
+            }
+
+            nav a:hover,
+            nav a:focus-visible {
+                background-color: var(--mustard);
+                color: var(--dark-text);
+            }
+
+            nav a[aria-current="page"] {
+                background-color: var(--cream);
+                color: var(--dark-text);
+            }
+
+            nav {
+                color: #FFF0D8;
+            }
+
+            /* Main content */
+            main {
+                max-width: 1000px;
+                margin: 35px auto;
+                padding: 0 20px;
+                min-height: 55vh;
+            }
+
+            section {
+                background-color: #E3D2B8;
+                padding: 30px;
+                border: 2px solid var(--burgundy);
+                border-radius: 8px;
+                background-color: #E3D2B8;
+                border: 2px solid var(--burgundy);
+                border-radius: 3px;
+                box-shadow: 7px 7px 0 rgba(113, 55, 59, 0.25);
+                padding: clamp(20px, 4vw, 45px);
+            }
+
+            section[hidden] {
+                display: none;
+            }
+
+            h2 {
+                color: #71373B;
+                border-bottom: 3px solid var(--olive);
+                padding-bottom: 10px;
+                margin-top: 0;
+                font-family: Georgia, serif;
+                font-size: clamp(1.6rem, 3vw, 2.2rem);
+                letter-spacing: 0.5px;
+                border-bottom: 4px double var(--olive);
+                padding-bottom: 12px;
+            }
+
+            /* Footer */
+            footer {
+                background-color: var(--burgundy);
+                /* white text provides a good contrast against the burgundy and fits the color scheme well*/
+                color: #FFFFFF;
+                text-align: center;
+                padding: 20px;
+            }
+
+            footer a {
+                color: #FFF0D8;
+                text-decoration: underline;
+                text-underline-offset: 3px;
+                color: #FFF0D8;
+                text-decoration: none;
+                border-bottom: 1px solid var(--mustard);
+                padding-bottom: 2px;
+            }
+
+            footer a:hover,
+            footer a:focus-visible {
+                color: var(--mustard);
+            }
+
+            /* Responsive layout */
+            @media (max-width: 600px) {
+                nav {
+                    gap: 6px;
+                }
+
+                nav a {
+                    padding: 6px 4px;
+                }
+
+                section {
+                    padding: 20px;
+                }
+            }
+
+            /* Styling for future collection photographs */
+            figure {
+                background-color: #F0E2CB;
+                border: 1px solid #A78F73;
+                padding: 12px;
+                margin: 25px auto;
+                max-width: 450px;
+                box-shadow: 4px 5px 0 rgba(51, 39, 37, 0.15);
+            }
+            #when figure {
+                max-width: 650px;
+            }
+
+            figure img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+            figcaption {
+                font-size: 0.9rem;
+                font-style: italic;
+                text-align: center;
+                margin-top: 10px;
+                color: #593D36;
+            }
+
+            /* Ensure keyboard users can see focused links */
+            a:focus-visible {
+                outline: 3px solid var(--mustard);
+                outline-offset: 3px;
+            }
+
+            /* Footer layout and validation links */
+            footer p {
+                margin: 8px 0;
+            }
+
+            footer p:last-of-type {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 10px;
+                color: #FFF0D8;
+            }
+            h3 {
+                color: var(--burgundy);
+                font-family: Georgia, serif;
+                font-size: 1.3rem;
+                margin-bottom: 8px;
+            }
+
+            /* vintage finds table */
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 25px auto;
+                font-family: Arial, sans-serif;
+            }
+
+            caption {
+                font-family: Georgia, serif;
+                font-weight: bold;
+                font-size: 1.1rem;
+                margin-bottom: 12px;
+                color: #332725;
+            }
+
+            th {
+                background-color: #9C4D51;
+                color: #FFF4E3;
+                padding: 12px;
+                border: 2px solid #332725;
+                text-align: left;
+            }
+
+            td {
+                padding: 12px;
+                border: 2px solid #332725;
+                background-color: #E3D2B8;
+            }
+
+            tbody tr:nth-child(even) td {
+                background-color: #D4BEA0;
+            }
+
+            tbody tr:hover td {
+                background-color: #D5A94C;
+            }
+
+        </style>
+        <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+        </head>
+        <body>
+            <header>
+                <h1>Collecting Retro, Y2K, and Novelty Items</h1>
+
+                <p><em>Your Trash? My Treasure.</em></p>
+
+                <nav aria-label="Hobby navigation">
+                    <!--Each section ID allows for identifying and displaying
+                    the correct section when a certain navigation link is clicked. -->
+                    <a href="#what">What</a> ¦
+                    <a href="#who">Who</a> ¦
+                    <a href="#when">When</a> ¦
+                    <a href="#where">Where</a> ¦
+                    <a href="#how">How</a> ¦
+                    <a href="#why">Why</a> ¦
+                    <a href="#ai-prompts">AI Prompts</a>
+                </nav>
+            </header>
+
+            <main>
+                    <!-- should be default landing page -->
+                    <section id="what">
+                        <h2>What: The Collection</h2>
+                        <p>
+                            This is a page dedicated to the wonderful world of
+                            retro and novelty collecting! From functional and funky decor, 
+                            to pop culture figurines and relics, collecting is all about finding that 
+                            special and unique item that makes your personality that much easier to understand.
+                        </p>
+                        <figure>
+                            <img src="images/terrifier.jpg"
+                                alt="Terrifier horror figurine surrounded by retro memorabilia">
+
+                            <figcaption>
+                            My Terrifier figurine displayed amongst my other retro and novelty collectables.
+
+                            <p><em>Personal photograph taken by me. Not AI-generated.</em></p>
+                            </figcaption>
+                        </figure>
+
+                        <h3>What Makes Something Collectible?</h3>
+
+                        <p>
+                            A common misconception when it comes to collecting is that
+                            the item <em>must</em> be expensive or incredibly rare. The truth is,
+                            interesting finds can be everyday objects from another decade, items that remind
+                            us of our childhood, or simply just an item that pleases our decor taste.
+                        <br>
+                        <br>
+                            Collecting items that you enjoy can also have less to do with the item,
+                            but more to do with the story of the item, the memories they create
+                            or have allowed to resurface, and the feelings we gain growing attacthed to our collections.
+                        </p>
+
+                        <h3>What Can You Collect?</h3>
+                        <p>
+                            The possibilities are practically endless! Retro
+                            electronics, vintage magazines, novelty lamps, movie
+                            memorabilia, and childhood toys are just a few examples.
+                            Some collectors focus on a specific decade or franchise,
+                            while others enjoy mixing different styles to create
+                            a collection that's completely their own.
+                        </p>
+                    </section>
+
+                    <!-- About the collector -->
+                    <section id="who" hidden>
+                        <h2>Who: The Collector</h2>
+
+                        <p>
+                            A collector can be anyone! There is no qualification to collecting items that
+                            mean a lot to you. What truly makes a collector is the special appreciation for things 
+                            that make people stop and ask, "Where on earth did you find that?" Sometimes, the stranger the find, the better!
+                        </p>
+
+                        <figure>
+                            <img src="images/shelf.jpg"
+                                alt="Shelves displaying SpongeBob memorabilia, novelty items, and pop culture collectibles">
+                            <figcaption>
+                                A look at my personal collection of nostalgic
+                                and pop culture memorabilia.
+
+                                <p><em>Personal photograph taken by me. Not AI-generated.</em></p>
+                            </figcaption>
+                        </figure>
+
+                        <h3>Who Am I as a Collector?</h3>
+
+                        <p>
+                            Personally, my most favored items revolve around entertainment and media.
+                            I am especially drawn to horror-inspired memorabilia such as displays and figurines. 
+                            I also have a love for vintage comics, early 2000s cartoons and modern,
+                            or unusual lamps and light fixtures that bring personality to my space. I also travel often,
+                            so grabbing a souvenir is always a must!
+                        </p>
+                        <h3>The Collecting Community</h3>
+                        <p>
+                            One of the best things about collecting is discovering
+                            other people who share the same interests! From vintage
+                            enthusiasts to horror memorabilia collectors, there
+                            are communities dedicated to almost every imaginable
+                            category. Social media groups, conventions, and collector
+                            events make it easier to connect, trade, and share
+                            exciting discoveries with others.
+                        </p>
+                    </section>
+
+                    <!-- Best times to collect -->
+                    <section id="when" hidden>
+                        <h2>When: The Best Times to Find Treasures</h2>
+
+                        <p>
+                            When is the best time to find a hidden gem? Honestly,
+                            there's no perfect schedule for collecting!
+                            Sometimes the best discoveries happen when you least
+                            expect them. However, themed conventions and festivals 
+                            are great opportunities for collectors to narrow their 
+                            search and discover items that cater to their specific interests!
+                        </p>
+
+                        <figure>
+                            <img src="images/thriftcon.jpeg"
+                                alt="ThriftCon event announcing its arrival in Charlotte at the Park Expo Center">
+
+                            <figcaption>
+                                ThriftCon Charlotte is a popular traveling vintage market that
+                                had an incredible turn out for all vintage collectors and enthusiasts.
+
+                                <p><em>
+                                    Promotional flyer obtained from a ThriftCon email.
+                                    Not AI-generated by me.
+                                </em></p>
+                            </figcaption>
+                        </figure>
+
+                        <h3>When Do I Collect?</h3>
+
+                        <p>
+                            Oftentimes, a simple search for vintage events and local opportunities can go a long way! 
+                            I've even found that saving event flyers or favoriting promotional posts from vintage groups 
+                            can help you discover similar events through social media recommendations, suggested pages, 
+                            and future advertisements.
+                        </p>
+                        <h3>Timing Your Treasure Hunts</h3>
+
+                        <p>
+                            Different shopping locations offer different
+                            opportunities throughout the week and year.
+                            Here are a few times worth keeping in mind:
+                        </p>
+
+                        <ul>
+                            <li>
+                                <strong>Weekends:</strong> Great for flea markets,
+                                garage sales, and estate sales.
+                            </li>
+                            <li>
+                                <strong>Early mornings:</strong> Arriving before
+                                the crowds can mean a better selection.
+                            </li>
+                            <li>
+                                <strong>Seasonal events:</strong> Vintage festivals
+                                and conventions offer themed shopping experiences.
+                            </li>
+                            <li>
+                                <strong>Anytime:</strong> Thrift stores regularly
+                                receive new inventory, so unexpected finds
+                                can happen on any visit!
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Places to find collectibles -->
+                    <section id="where" hidden>
+                        <h2>Where: Hunting for Collectables</h2>
+
+                        <p>
+                            Retro treasures can be found in many places. I find that Goodwill can occasionally
+                            have good finds, but something closer to an antique mall, such as the Sleepy Poet, is 
+                            a popular hotspot for much more than what Goodwill can offer.
+                        </p>
+
+                        <figure>
+                            <img src="images/vintagefest.jpg"
+                                alt="Totally Rad Vintage Fest event banner">
+
+                            <figcaption>
+                                Totally Rad Vintage Fest Expo
+                                that visited Charlotte over the Summer.
+
+                                <p><em>Personal photograph taken by me. Not AI-generated.</em></p>
+                            </figcaption>
+                        </figure>
+                        <h3>Vintage Markets and Festivals</h3>
+                        <p>
+                            Vintage festivals bring together collectors, independent sellers, 
+                            and enthusiasts who share an appreciation for retro culture. These events
+                            often feature clothing, memorabilia, electronics,
+                            and one-of-a-kind decorations.
+                        </p>
+                        
+                        <h3>Where to Find Your Next Treasure</h3>
+
+                        <table>
+                            <caption>Popular Places to Find Retro Collectibles</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Common Finds</th>
+                                    <th scope="col">Price Range</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Thrift Stores</td>
+                                    <td>Decor, toys, novelty items</td>
+                                    <td>$</td>
+                                </tr>
+                                <tr>
+                                    <td>Antique Malls</td>
+                                    <td>Vintage electronics, memorabilia</td>
+                                    <td>$$ - $$$</td>
+                                </tr>
+                                <tr>
+                                    <td>Vintage Festivals</td>
+                                    <td>Y2K clothing, retro collectibles</td>
+                                    <td>$$ - $$$</td>
+                                </tr>
+                                <tr>
+                                    <td>Online Marketplaces</td>
+                                    <td>Rare figures, discontinued items</td>
+                                    <td>$ - $$$</td>
+                                </tr>
+                                <tr>
+                                    <td>Garage Sales</td>
+                                    <td>Unexpected finds</td>
+                                    <td>$ - $$</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            Price ranges are general estimates and vary depending
+                            on the seller, rarity, and condition of each item.
+                        </p>
+
+                    </section>
+
+                    <section id="how" hidden>
+                        <h2>How: Starting Your Collection</h2>
+
+                        <p>
+                            Building a collection takes curiosity, patience, and
+                            a good eye for unusual finds. Whether you're searching
+                            for a specific childhood favorite or simply browsing
+                            for something interesting, every collector develops
+                            their own approach to treasure hunting.
+                        </p>
+
+                        <h3>Finding Your Next Collectible</h3>
+                        <p>
+                            Start by exploring thrift stores, antique malls,
+                            vintage festivals, and online marketplaces.
+                            Keeping a wishlist of interesting items can help
+                            narrow down your search, but sometimes the best
+                            discoveries are completely unexpected!
+                        </p>
+                        <figure>
+                            <img src="images/actionfigures.jpg"
+                                alt="Vintage action figures displayed in their original packaging">
+
+                            <figcaption>
+                                Vintage action figures in their original packaging,
+                                waiting to become part of someone's collection.
+
+                                <p><em>Personal photograph taken by me. Not AI-generated.</em></p>
+                            </figcaption>
+                        </figure>
+                        <h3>Tips for Starting Your Collection</h3>
+
+                        <ol>
+                            <li>
+                                <strong>Choose your interests:</strong>
+                                Start with items that genuinely excite you,
+                                whether that's vintage toys, horror memorabilia,
+                                or novelty decorations.
+                            </li>
+                            <li>
+                                <strong>Set a budget:</strong>
+                                Decide how much you're comfortable spending
+                                before purchasing collectibles.
+                            </li>
+                            <li>
+                                <strong>Research your finds:</strong>
+                                Compare prices, check an item's condition,
+                                and learn about its history before buying.
+                            </li>
+                            <li>
+                                <strong>Display your treasures:</strong>
+                                Use shelves, display cases, or creative arrangements
+                                to show off your collection.
+                            </li>
+                        </ol>
+
+
+                    </section>
+
+                    <!-- Why collecting matters -->
+                    <section id="why" hidden>
+                        <h2>Why: The Joy of Collecting</h2>
+
+                        <p>
+                            Why collect things that others might consider outdated
+                            or unnecessary? For many collectors, the answer goes
+                            beyond simply owning objects. Collecting is a way to
+                            celebrate nostalgia, express individuality, and
+                            preserve pieces of the past.
+                        </p>
+
+                        <h3>A Little Piece of Nostalgia</h3>
+                        <p>
+                            Sometimes, a single object can bring back an entire
+                            collection of memories. Whether it's a childhood toy,
+                            an old magazine, or a familiar cartoon character,
+                            retro collectibles have a way of reminding people
+                            of simpler times and forgotten favorites.
+                        </p>
+
+                        <figure>
+                            <img src="images/MADmagazine.jpg"
+                                alt="A collection of vintage MAD magazines featuring nostalgic pop culture covers">
+
+                            <figcaption>
+                                Vintage MAD magazines featuring pop culture
+                                references and artwork from past decades.
+
+                                <p><em>Personal photograph taken by me. Not AI-generated.</em></p>
+                            </figcaption>
+                        </figure>
+                        <h3>Expressing Your Personality</h3>
+                        <p>
+                            Collections can say a lot about the people who own
+                            them. From horror memorabilia to colorful novelty
+                            decorations, the items someone chooses to display
+                            can reflect their interests, creativity, and
+                            personal style.
+                        </p>
+                    </section>
+
+                    <!-- AI usage documentation -->
+                    <section id="ai-prompts" hidden>
+                        <h2>AI Prompts</h2>
+
+                        <p>
+                            AI was used as a resource while developing this hobby website.
+                            The prompts below reflect some of the assistance requested
+                            during the development process.
+                        </p>
+
+                        <h3>Prompts Used</h3>
+                        <ol>
+                            <li>
+                                "Give me a mix of colors that represent the feeling and
+                                vibe of vintage knickknacks, decor, and collector items."
+                            </li>
+                            <li>
+                                "Explain why someone may choose to use spans over classes and IDs,
+                                and whether they are necessary for navigation separators."
+                            </li>
+                            <li>
+                                "Help me understand and resolve the HTML and CSS
+                                validation checker errors on my hobby website."
+                            </li>
+                            <li>
+                                "Help me modify my JavaScript so the browser tab title
+                                automatically updates to match the currently selected section."
+                            </li>
+                        </ol>
+
+                        <p>
+                            AI assistance was primarily used for understanding HTML,
+                            improving CSS styling, and troubleshooting website requirements.
+                        </p>
+                    </section>
+                </main>
+
+            
+            <footer>
+                <p>
+                    Page designed by
+                    
+<a href="../archiecomixx.html">ArchieComixx</a> © 2026
+                </p>
+              
+                <p>
+                    <a href="https://validator.w3.org/nu/?doc=https://webpages.charlotte.edu/aarchie5/itis3135/hobby/"
+                    target="_blank" rel="noopener noreferrer">HTML Validation</a> ¦
+
+                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://webpages.charlotte.edu/aarchie5/itis3135/hobby/"
+                    target="_blank" rel="noopener noreferrer">CSS Validation</a> ¦
+
+                    <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/aarchie5/itis3135/hobby/"
+                    target="_blank" rel="noopener noreferrer">Accessibility Validation</a>
+                </p>
+            </footer>
+
+
+        <script>
+            // Select all hobby sections and navigation links.
+            const sections = document.querySelectorAll("main section");
+            const navLinks = document.querySelectorAll("header nav a");
+
+            // Display the selected section and hide the others.
+            function showSection(sectionId) {
+                sections.forEach((section) => {
+                    section.hidden = section.id !== sectionId;
+                });
+                // Update the browser title to match the visible section.
+                const activeSection = document.getElementById(sectionId);
+                const sectionHeading = activeSection.querySelector("h2");
+
+                document.title = "Collecting Retro, Y2K, and Novelty Items || " +
+                    sectionHeading.textContent.trim();
+
+                // Identify the currently selected navigation link.
+                navLinks.forEach((link) => {
+                    if (link.getAttribute("href") === "#" + sectionId) {
+                        link.setAttribute("aria-current", "page");
+                    } else {
+                        link.removeAttribute("aria-current");
+                    }
+                });
+            }
+
+            // Switch sections when a navigation link is clicked.
+            navLinks.forEach((link) => {
+                link.addEventListener("click", () => {
+                    const sectionId = link.getAttribute("href").substring(1);
+                    showSection(sectionId);
+                });
+            });
+
+            // Show the correct section when loading or using browser history.
+            function updateFromHash() {
+                const sectionId = window.location.hash.substring(1);
+                const selectedSection = document.getElementById(sectionId);
+
+                if (selectedSection && selectedSection.matches("main section")) {
+                    showSection(sectionId);
+                } else {
+                    showSection("what");
+                }
+            }
+
+            window.addEventListener("hashchange", updateFromHash);
+            updateFromHash();
+        </script>
+    </body>
+</html>
