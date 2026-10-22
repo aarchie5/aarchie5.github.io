@@ -74,3 +74,17 @@ blockquote {
 .pleasure {
     font-family: Georgia, sans-serif;
 }
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+h6.display-name {
+    font-size: 2rem;
+    text-align: center;
+    white-space: nowrap;
+}
